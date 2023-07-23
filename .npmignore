@@ -1,0 +1,7 @@
+node_modules/
+*.spec.ts
+.eslintrc.js
+.eslintignore
+.gitignore
+.prettierrc
+.idea
