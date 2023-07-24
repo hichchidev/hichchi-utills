@@ -1,6 +1,6 @@
 // noinspection SpellCheckingInspection
 
-import { getMapKey } from "../object/get-map-key";
+import { getMapKey } from "../object";
 
 /**
  * Map of mime types to all file extensions.
