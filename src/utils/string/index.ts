@@ -4,6 +4,7 @@ export * from "./to-camel-case";
 export * from "./to-first-case";
 export * from "./to-lower-case";
 export * from "./to-lower-case-break";
+export * from "./to-number";
 export * from "./to-sentence-case";
 export * from "./to-snake-case";
 export * from "./to-title-case";

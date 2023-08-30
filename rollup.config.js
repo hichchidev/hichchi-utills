@@ -9,7 +9,7 @@ export default {
         {
             dir: outputDir,
             format: 'cjs', // CommonJS format for the Node.js environment
-            entryFileNames: '[name].js',
+            entryFileNames: '[name].cjs',
             preserveModules: true,
         },
         {

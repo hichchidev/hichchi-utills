@@ -1,7 +1,5 @@
 // noinspection SpellCheckingInspection
 
-import { getMapKey } from "../object";
-
 /**
  * Map of mime types to all file extensions.
  */
@@ -1207,50 +1205,3 @@ export const mimeTypes: Map<string, string> = new Map<string, string>([
     ["zirz", "application/vnd.zul"],
     ["zmm", "application/vnd.handheld-entertainment+xml"],
 ]);
-
-/**
- * Get file size in human-readable format.
- * @param size - File size in bytes.
- * @param round - Whether to round the size.
- * @returns File size in human-readable format.
- */
-export const getFileSize = (size: number, round?: boolean): string => {
-    if (size < 1024) {
-        return `${Math.round(size)} B`;
-    }
-    if (size < 1024 * 1024) {
-        return `${(size / 1024).toFixed(round ? 0 : 2)} KB`;
-    }
-    if (size < 1024 * 1024 * 1024) {
-        return `${(size / 1024 / 1024).toFixed(round ? 0 : 2)} MB`;
-    }
-    return `${(size / 1024 / 1024 / 1024).toFixed(round ? 0 : 2)} GB`;
-};
-
-/**
- * Get the file extension of the given mime type.
- * @param mimeType - Mime type.
- * @param allowedMimeTypes - Allowed mime types.
- * @returns File extension.
- */
-export const getFileExt = (mimeType: string, allowedMimeTypes?: Map<string, string>): string | undefined => {
-    return getMapKey(allowedMimeTypes ?? mimeTypes, mimeType);
-};
-
-/**
- * Save a StreamableBlob as a file.
- * @param blob - Blob to save.
- * @param filename - File name.
- * @throws {Error} - Throws an error if used in a Node.js environment.
- */
-export const saveAsFile = (blob: Blob, filename: string): void => {
-    if (typeof window === "undefined" || typeof document === "undefined") {
-        throw new Error("saveAsFile should be used only in the browser environment.");
-    }
-
-    const downloadURL: string = window.URL.createObjectURL(blob);
-    const link: HTMLAnchorElement = document.createElement("a");
-    link.href = downloadURL;
-    link.download = filename;
-    link.click();
-};

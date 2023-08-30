@@ -1,9 +1,9 @@
 {
   "name": "hichchi-utils",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Simple utilities for hichchi developers",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
