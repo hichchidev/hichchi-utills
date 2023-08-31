@@ -8,5 +8,5 @@ export const toFirstCase = (str?: string): string => {
     if (!str) {
         return "";
     }
-    return str[0]?.toUpperCase() || "" + str.slice(1).toLowerCase();
+    return (str[0]?.toUpperCase() || "") + str.slice(1).toLowerCase();
 };
