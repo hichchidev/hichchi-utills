@@ -1,5 +1,11 @@
 # hichchi-utils
 
+## 1.0.6
+
+### Patch Changes
+
+- 9a73b66: Fix bug in toFirstCase
+
 ## 1.0.5
 
 ### Patch Changes
