@@ -1,5 +1,11 @@
 # hichchi-utils
 
+## 1.0.7
+
+### Patch Changes
+
+- ba7888a: Add support to send a joining string to word Break methods.
+
 ## 1.0.6
 
 ### Patch Changes
