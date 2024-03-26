@@ -5,3 +5,4 @@ export * from "./get-value-by-path";
 export * from "./group-by";
 export * from "./omit";
 export * from "./search-map-value";
+export * from "./path-to-object";
