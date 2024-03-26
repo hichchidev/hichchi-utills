@@ -1,5 +1,11 @@
 # hichchi-utils
 
+## 1.0.8
+
+### Patch Changes
+
+- 38bbdda: Added path to object method
+
 ## 1.0.7
 
 ### Patch Changes
