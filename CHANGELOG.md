@@ -1,5 +1,11 @@
 # hichchi-utils
 
+## 1.0.9
+
+### Patch Changes
+
+- ccde570: Added new util method prune
+
 ## 1.0.8
 
 ### Patch Changes
