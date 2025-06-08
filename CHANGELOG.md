@@ -1,5 +1,11 @@
 # hichchi-utils
 
+## 1.0.10
+
+### Patch Changes
+
+- 6a76cf6: Moved related util functions to single files and added new util functions
+
 ## 1.0.9
 
 ### Patch Changes
