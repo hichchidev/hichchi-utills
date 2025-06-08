@@ -1,20 +1,25 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "target": "es2017",
-    "module": "commonjs",
-    "lib": ["es2019", "es7", "es6", "dom"],
+    "allowSyntheticDefaultImports": true,
     "declaration": true,
     "declarationMap": true,
-    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es2019",
+      "es7",
+      "es6",
+      "dom"
+    ],
+    "module": "commonjs",
+    "noImplicitAny": false,
     "outDir": "./dist",
     "rootDir": "./src",
+    "sourceMap": true,
     "strict": true,
-    "noImplicitAny": false,
     "strictNullChecks": false,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "emitDecoratorMetadata": true
+    "target": "es2017"
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
